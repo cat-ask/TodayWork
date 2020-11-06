@@ -36,7 +36,7 @@
             <!-- nav -->
             <nav>
                 <ul>
-                    <li><a href="#">Work list</a></li>
+                    <li><a class="now" href="#">Work list</a></li>
                     <li><a href="#">Calendar</a></li>
                     <li><a href="#">Diary</a></li>
                 </ul>
@@ -51,23 +51,71 @@
 
         <!-- content -->
         <div id="content">
-<<<<<<< HEAD
 
             <!-- today_workspace -->
-            <div id="today_workspace">
-                
+            <div id="today_workspace" class="workspace">
+                <h2 class="workspace_title"><i class="far fa-calendar text-white"></i> 오늘의 일정</h2>
+                <div id="main_work">
+                    <h4 class="work_title">Lorem ipsum dolor</h4>
+                    <p class="work_time"><i class="far fa-clock"></i> 20:12 </p>
+                    <p class="work_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia est ab inventore eveniet deleniti! Natus debitis eligendi itaque cum. Odit ipsam earum debitis asperiores consectetur vitae eum tempora dolore at!</p>
+                </div>
+                <div class="work_list">
+                    <a href="#" class="work_list_title"><i class="fas fa-angle-right"></i> Lorem ipsum dolor1</a>
+                    <a href="#" class="work_list_title"><i class="fas fa-angle-right"></i> Lorem ipsum dolor2</a>
+                    <a href="#" class="work_list_title"><i class="fas fa-angle-right"></i> Lorem ipsum dolor3</a>
+                    <button class="more_btn"><i class="fas fa-plus"></i> more list</button>
+                </div>
             </div>
             <!-- /today_workspace -->
 
+            <!-- workadd -->
+            <div id="workadd" class="workspace">
+                <h2 class="workspace_title">📝일정 추가</h2>
+                <form class="p-3">
+                    <div class="form-group">
+                        <label for="form-title" class="form-label">제목</label>
+                        <input type="text" id="form-title" name="content" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-content" class="form-label">내용</label>
+                        <textarea name="content" id="form-content" cols="10" rows="5" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-date" class="form-label">기한</label>
+                        <select name="date" id="form-date" class="form-control">
+                            <option value="today">오늘</option>
+                            <option value="tomorrow">내일</option>
+                            <option value="week">이번주</option>
+                            <option value="month">이번달</option>
+                            <option value="year">이번년</option>
+                            <option value="user">직접설정</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" class="form-control">
+                        <span> ~ </span>
+                        <input type="date" class="form-control">
+                    </div>
+                </form>
+            </div>
+            <!-- /workadd -->
+
             <!-- last_workspace -->
-            <div id="last_workspace">
+            <div id="last_workspace" class="workspace">
 
             </div>
             <!-- /last_workspace -->
 
             <!-- complete_workspace -->
-            <div id="complete_workspace">
+            <div id="complete_workspace" class="workspace">
 
+            </div>
+            <!-- /complete_workspace -->
+
+            <!-- complete_workspace -->
+            <div id="Notcomplete_workspace" class="workspace">
+                
             </div>
             <!-- /complete_workspace -->
 
@@ -80,18 +128,6 @@
             <div id="sns">
                 
             </div>
-=======
-            
-        </div>
-        <!-- /content -->
-
-        <!-- footer -->
-        <footer>
-            <p id="copyright">Copyright 2020 연지수 all rights reserved</p>
-            <div id="sns">
-                
-            </div>
->>>>>>> 9b52fb2f025cceff7fb3486bae06b2cc626d1483
         </footer>
         <!-- /footer -->
     </div>
