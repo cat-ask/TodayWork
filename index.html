@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📆 Today work</title>
+    <title>Today work</title>
 
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -32,7 +32,7 @@
     <div id="wrap">
         <!-- header -->
         <header>
-            <div id="logo">📆 Today work</div>
+            <div id="logo">Today work</div>
             <!-- nav -->
             <nav>
                 <ul>
@@ -42,92 +42,61 @@
                 </ul>
             </nav>
             <!-- /nav -->
-            <div>
-                <button class="user_btn" id="signIn_btn">Sign In</button>
-                <button class="user_btn" id="signUp_btn">Sign Up</button>
-            </div>
         </header>
         <!-- /header -->
 
         <!-- content -->
-        <div id="content">
+        <div id="content_box">
+            <div id="content">
+                <!-- #search -->
+                <input type="text" id="search" placeholder="Search...">
 
-            <!-- today_workspace -->
-            <div id="today_workspace_list">
-                <h2 class="workspace_title">📅 오늘의 일정</h2>
-                <div class="today_workspace workspace main">
-                    <h4 class="work_title">Lorem ipsum dolor</h4>
-                    <p class="work_time"><i class="far fa-clock"></i> 20:12 </p>
-                    <p class="work_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia est ab inventore eveniet deleniti! Natus debitis eligendi itaque cum. Odit ipsam earum debitis asperiores consectetur vitae eum tempora dolore at!</p>
-                </div>
-                <div class="today_workspace workspace main">
-                    <h4 class="work_title">Lorem ipsum dolor</h4>
-                    <p class="work_time"><i class="far fa-clock"></i> 20:12 </p>
-                    <p class="work_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia est ab inventore eveniet deleniti! Natus debitis eligendi itaque cum. Odit ipsam earum debitis asperiores consectetur vitae eum tempora dolore at!</p>
-                </div>
-                <div class="today_workspace workspace main">
-                    <h4 class="work_title">Lorem ipsum dolor</h4>
-                    <p class="work_time"><i class="far fa-clock"></i> 20:12 </p>
-                    <p class="work_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia est ab inventore eveniet deleniti! Natus debitis eligendi itaque cum. Odit ipsam earum debitis asperiores consectetur vitae eum tempora dolore at!</p>
-                </div>
-                <div class="today_workspace workspace main">
-                    <h4 class="work_title">Lorem ipsum dolor</h4>
-                    <p class="work_time"><i class="far fa-clock"></i> 20:12 </p>
-                    <p class="work_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia est ab inventore eveniet deleniti! Natus debitis eligendi itaque cum. Odit ipsam earum debitis asperiores consectetur vitae eum tempora dolore at!</p>
-                </div>
-            </div>
-            <!-- /today_workspace -->
+                <!-- todayWork -->
+                <div id="today_work_list">
+                    <h4>오늘의 할일</h4>
 
-            <!-- workadd -->
-            <div id="workadd" class="workspace">
-                <h2 class="workspace_title">📝일정 추가</h2>
-                <form class="p-3">
-                    <div class="form-group">
-                        <label for="form-title" class="form-label">제목</label>
-                        <input type="text" id="form-title" name="content" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="form-content" class="form-label">내용</label>
-                        <textarea name="content" id="form-content" cols="10" rows="5" class="form-control"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="form-date" class="form-label">기한</label>
-                        <select name="date" id="form-date" hidden>
-                            <option value="today">오늘</option>
-                            <option value="tomorrow">내일</option>
-                            <option value="week">이번주</option>
-                            <option value="month">이번달</option>
-                            <option value="year">이번년</option>
-                            <option value="user">직접설정</option>
-                        </select>
-                        <div id="select_form">오늘 <i class="fa fa-angle-down"></i></div>
-                        <div id="select_option_box">
-                            <div class="select_option checked">오늘<i class="fa fa-check"></i></div>
-                            <div class="select_option">내일<i class="fa fa-check"></i></div>
-                            <div class="select_option">이번주<i class="fa fa-check"></i></div>
-                            <div class="select_option">이번달<i class="fa fa-check"></i></div>
-                            <div class="select_option">이번년<i class="fa fa-check"></i></div>
-                            <div class="select_option">직접설정<i class="fa fa-check"></i></div>
+                    <div class="workspace del">
+                        <input type="checkbox" class="work_checkbox">
+                        <div class="work_content">
+                            <h5>Title</h5>
+                            <button class="work_content_option"><i class="fas fa-ellipsis-v"></i></button>
+                            <div class="work_content_option_box">
+                                <button class="work_mod">수정하기</button>
+                                <button class="work_del">삭제하기</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="form-group" id="user_date_form">
-                        <input type="date" class="form-control">
-                        <span> ~ </span>
-                        <input type="date" class="form-control">
+                    
+                    <div class="workspace">
+                        <input type="checkbox" class="work_checkbox">
+                        <div class="work_content">
+                            <h5>Title</h5>
+                            <button class="work_content_option"><i class="fas fa-ellipsis-v"></i></button>
+                            <div class="work_content_option_box">
+                                <button class="work_mod">수정하기</button>
+                                <button class="work_del">삭제하기</button>
+                            </div>
+                        </div>
                     </div>
-                </form>
-            </div>
-            <!-- /workadd -->
 
+                </div>
+            </div>
         </div>
         <!-- /content -->
+
+        <!-- <div id="popup_bc">
+            <div id="popup">
+                <div id="popup_header">
+                    <h5 id="popup_title">Title</h5>
+                    <p id="popup_status">2020-12-11 10:33</p>
+                </div>
+                <p id="popup_content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque possimus quibusdam id inventore nostrum ipsum, distinctio at laboriosam quaerat officia consequatur ullam tempora aperiam illum, deleniti hic accusantium cum quisquam.</p>
+            </div>
+        </div> -->
 
         <!-- footer -->
         <footer>
             <p id="copyright">Copyright 2020 연지수 all rights reserved</p>
-            <div id="sns">
-                
-            </div>
         </footer>
         <!-- /footer -->
     </div>
